@@ -10,7 +10,8 @@ __meta__ = {
 [node name="Label" type="Label" parent="."]
 margin_right = 1024.0
 margin_bottom = 400.0
-text = "Game Over! Play Again?"
+text = "Your time has run out!
+Play Again?"
 align = 1
 valign = 1
 __meta__ = {
