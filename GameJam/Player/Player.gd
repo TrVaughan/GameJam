@@ -36,7 +36,7 @@ func _process(delta):
 	pass
 
 func _physics_process(delta):
-	
+	if is_on_floor(): velocity.y = 0
 	if not is_stunned:
 		
 		var move_v = move_vector()
