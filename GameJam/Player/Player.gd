@@ -38,16 +38,13 @@ func _physics_process(delta):
 		velocity.y = 0
 		velocity.y -= jump_power
 		is_jumping = true
-		print("now jumping")
 		if different_gravity_during_jump:
 			current_gravity = jump_gravity
 		
 	if(Input.is_action_just_released("jump") and is_jumping):
-		print("done jumping")
 		if(different_gravity_during_jump):
 			current_gravity = gravity
 		is_jumping = false
-	print(jump_gravity)
 	velocity.y += current_gravity * delta
 	
 	velocity.y = clamp(velocity.y, -max_move, max_move)
