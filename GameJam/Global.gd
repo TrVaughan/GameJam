@@ -3,7 +3,7 @@ extends Node
 var HUD
 var lives_saved = 0
 export var total_lives : int = 10
-export var time_limit : float = 10 # in seconds
+export var time_limit : float = 120 # in seconds
 var timer
 var game_over : bool
 
