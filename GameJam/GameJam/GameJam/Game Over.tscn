@@ -1,0 +1,45 @@
+[gd_scene format=2]
+
+[node name="Game Over" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Play_Again" type="Button" parent="."]
+margin_left = 412.0
+margin_top = 330.0
+margin_right = 612.0
+margin_bottom = 366.0
+custom_colors/font_color_disabled = Color( 1, 0.00784314, 0.00784314, 1 )
+custom_colors/font_color = Color( 0.266667, 1, 0, 1 )
+text = "Play Again"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Quit" type="Button" parent="."]
+margin_left = 412.0
+margin_top = 390.0
+margin_right = 612.0
+margin_bottom = 426.0
+custom_colors/font_color_disabled = Color( 1, 0, 0, 1 )
+custom_colors/font_color = Color( 1, 0, 0, 1 )
+text = "Quit"
+
+[node name="Label" type="Label" parent="."]
+margin_left = -275.5
+margin_top = -239.058
+margin_right = 748.5
+margin_bottom = 285.942
+rect_scale = Vector2( 1.521, 1.686 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
+text = "Your Time has run out!
+Play Again?"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
