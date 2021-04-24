@@ -36,7 +36,7 @@ func _process(delta):
 	pass
 
 func _physics_process(delta):
-	
+	if is_on_floor(): velocity.y = 0
 	if not is_stunned:
 		
 		var move_v = move_vector()
@@ -65,6 +65,7 @@ func _physics_process(delta):
 		$Sprite.flip_h = true
 	if direction > 0 and $Sprite.flip_h:
 		$Sprite.flip_h = false
+	
 	
 	move_and_slide(velocity, Vector2.UP)
 	
