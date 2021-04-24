@@ -1,5 +1,5 @@
-# Project Name
-MSCH-C220 Game Jam, April 2021: Plague Runner
+# Plague Runner
+MSCH-C220 Game Jam, April 2021
 
 ## Theme
 You play as a plague doctor who needs to save all the plague-ridden citizens before they succumb to their disease. To win, the player needs to save everyone- and they're on a very quick time limit. Nobody can be left behind, and every death matters!
