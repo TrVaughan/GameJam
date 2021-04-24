@@ -7,6 +7,8 @@ You play as a plague doctor who needs to save all the plague-ridden citizens bef
 ## Game Play
 Objective
 - Save everyone before time runs out!
+
+
 Game-play instructions
 - WASD to move
 - Space to jump
