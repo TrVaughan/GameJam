@@ -33,7 +33,7 @@ Other assets are original, made by Trinity Vaughan
 
 ## Future Development
 
-# Created by: Group Name
+# Created by: Death Eaters
 - Trinity Vaughan: Art
 - Ryan Geer: Design
 - Baerett Stone: Programming
