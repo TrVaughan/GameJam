@@ -8,6 +8,7 @@ extends Control
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	$"People Saved".text = "You Saved " + str(Global.lives_saved) + " People"
 	pass # Replace with function body.
 
 
