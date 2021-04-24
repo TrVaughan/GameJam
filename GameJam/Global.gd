@@ -2,16 +2,17 @@ extends Node
 
 var HUD
 var lives_saved = 0
-export var total_lives : int = 10
+var total_lives : int = 10
 export var time_limit : float = 120 # in seconds
 var timer
 var game_over : bool
 
-# Coming Soon
 func _ready():
 	game_over = false
 	HUD = get_tree().current_scene.get_node_or_null("UI/HUD")
+	total_lives = get_tree().current_scene.get_node("Sick_Person Container").get_child_count()
 	timer = get_tree().create_timer(time_limit)
+	
 
 func _process(delta):
 	if timer != null:
