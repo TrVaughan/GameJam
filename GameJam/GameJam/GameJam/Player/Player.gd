@@ -66,6 +66,7 @@ func _physics_process(delta):
 	if direction > 0 and $Sprite.flip_h:
 		$Sprite.flip_h = false
 	
+	
 	move_and_slide(velocity, Vector2.UP)
 	
 	

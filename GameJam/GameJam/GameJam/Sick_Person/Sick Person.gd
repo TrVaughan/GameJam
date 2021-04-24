@@ -4,7 +4,6 @@ extends Node2D
 # Declare member variables here. Examples:
 # var a = 2
 var saved = false
-export var fadespeed : float = 1
 export var male_skin : Texture
 export var female_skin : Texture
 
@@ -19,6 +18,12 @@ func _ready():
 		
 	pass # Replace with function body.
 
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+#func _process(delta):
+#	pass
+
+
 func _on_Area2D_body_entered(body):
 	if not saved and body.name == "Player":
 		save()
@@ -26,14 +31,6 @@ func _on_Area2D_body_entered(body):
 
 func save():
 	saved = true
-	$Particles2D.emitting = true
+	$Sprite.visible = false
 	Global.lives_saved = Global.lives_saved + 1
 	
-func _process(delta):
-	if saved:
-		_fade(delta)
-
-func _fade(delta):
-	# based on the number of sick people we have, we really don't even need to queue free at the end
-	modulate.a -= delta*fadespeed
-	pass
