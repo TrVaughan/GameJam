@@ -96,23 +96,32 @@ script = ExtResource( 4 )
 [node name="Enemy_Container" type="Node2D" parent="."]
 position = Vector2( -2.51984, 2.51984 )
 
-[node name="HUD" type="Control" parent="."]
+[node name="UI" type="CanvasLayer" parent="."]
+follow_viewport_enable = true
+
+[node name="HUD" type="Control" parent="UI"]
 margin_right = 40.0
 margin_bottom = 40.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Score" type="Label" parent="HUD"]
-margin_left = 143.088
-margin_top = 4.49493
-margin_right = 203.088
-margin_bottom = 24.4949
-text = "Score:"
+[node name="Score" type="Label" parent="UI/HUD"]
+margin_left = 4.0
+margin_top = 11.0
+margin_right = 285.0
+margin_bottom = 31.0
+text = "Lives Saved:"
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
-[node name="Timer" type="Label" parent="HUD"]
-margin_left = 37.1331
-margin_top = 9.41034
-margin_right = 92.1331
-margin_bottom = 23.4103
+[node name="Timer" type="Label" parent="UI/HUD"]
+margin_left = 5.25198
+margin_top = 43.9228
+margin_right = 295.252
+margin_bottom = 57.9228
 text = "Time: "
+__meta__ = {
+"_edit_use_anchors_": false
+}
