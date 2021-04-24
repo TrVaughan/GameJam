@@ -10,7 +10,7 @@ var game_over : bool
 # Coming Soon
 func _ready():
 	game_over = false
-	HUD = get_tree().current_scene.get_node("UI/HUD")
+	HUD = get_tree().current_scene.get_node_or_null("UI/HUD")
 	timer = get_tree().create_timer(time_limit)
 
 func _process(delta):
@@ -23,12 +23,18 @@ func _process(delta):
 
 
 func gameover():
+	get_tree().change_scene("res://Game Over.tscn")
 	pass
+	
+func restart():
+	game_over = false
+	HUD = get_tree().current_scene.get_node_or_null("UI/HUD")
+	timer = get_tree().create_timer(time_limit)
 
 func update_UI():
 	if(HUD != null):
 		HUD.find_node("Timer").text = "Time: " +  str(int((timer.get_time_left())))
 		HUD.find_node("Score").text = "Lives Saved: " + str(lives_saved) + "/" + str(total_lives)
 	else:
-		HUD = get_tree().current_scene.get_node("UI/HUD")
+		HUD = get_tree().current_scene.get_node_or_null("UI/HUD")
 
