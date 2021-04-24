@@ -7,6 +7,8 @@ You play as a plague doctor who needs to save all the plague-ridden citizens bef
 ## Game Play
 Objective
 - Save everyone before time runs out!
+
+
 Game-play instructions
 - WASD to move
 - Space to jump
@@ -33,8 +35,8 @@ Other assets are original, made by Trinity Vaughan
 
 ## Future Development
 
-# Created by: Group Name
-Trinity Vaughan - Art
-Ryan Geer - Design
-Baerett Stone - Programming
-Darrick Gingles - Writing/Design
+# Created by: Death Eaters
+- Trinity Vaughan: Art
+- Ryan Geer: Design
+- Baerett Stone: Programming
+- Darrick Gingles: Writing/Design
