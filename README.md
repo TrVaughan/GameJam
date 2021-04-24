@@ -34,7 +34,7 @@ Other assets are original, made by Trinity Vaughan
 ## Future Development
 
 # Created by: Group Name
-Trinity Vaughan - Art \n
-Ryan Geer - Design \n
-Baerett Stone - Programming \n
-Darrick Gingles - Writing/Design
+- Trinity Vaughan: Art
+- Ryan Geer: Design
+- Baerett Stone: Programming
+- Darrick Gingles: Writing/Design
